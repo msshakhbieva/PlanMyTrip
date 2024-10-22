@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3CB0B982CC6B79F0079C3E5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0B972CC6B79F0079C3E5 /* Models.swift */; };
+		A3CB0B9A2CC6B7BC0079C3E5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0B992CC6B7BC0079C3E5 /* HomeViewModel.swift */; };
+		A3CB0B9C2CC6B7DA0079C3E5 /* TripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0B9B2CC6B7DA0079C3E5 /* TripsViewModel.swift */; };
+		A3CB0B9E2CC6B7ED0079C3E5 /* TripsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0B9D2CC6B7ED0079C3E5 /* TripsDetailViewModel.swift */; };
+		A3CB0BA02CC6B8080079C3E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0B9F2CC6B8080079C3E5 /* HomeView.swift */; };
+		A3CB0BA22CC6B8290079C3E5 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0BA12CC6B8290079C3E5 /* TripsView.swift */; };
+		A3CB0BA42CC6B8420079C3E5 /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0BA32CC6B8420079C3E5 /* TripDetailView.swift */; };
+		A3E073CF2CC69557001C6A19 /* PlanMyTripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E073CE2CC69557001C6A19 /* PlanMyTripApp.swift */; };
+		A3E073D12CC69557001C6A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E073D02CC69557001C6A19 /* ContentView.swift */; };
+		A3E073D32CC69559001C6A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E073D22CC69559001C6A19 /* Assets.xcassets */; };
+		A3E073D62CC69559001C6A19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E073D52CC69559001C6A19 /* Preview Assets.xcassets */; };
+		A3E073E02CC69559001C6A19 /* PlanMyTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E073DF2CC69559001C6A19 /* PlanMyTripTests.swift */; };
+		A3E073EA2CC69559001C6A19 /* PlanMyTripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E073E92CC69559001C6A19 /* PlanMyTripUITests.swift */; };
+		A3E073EC2CC69559001C6A19 /* PlanMyTripUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E073EB2CC69559001C6A19 /* PlanMyTripUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3E073DC2CC69559001C6A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E073C32CC69557001C6A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3E073CA2CC69557001C6A19;
+			remoteInfo = PlanMyTrip;
+		};
+		A3E073E62CC69559001C6A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E073C32CC69557001C6A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3E073CA2CC69557001C6A19;
+			remoteInfo = PlanMyTrip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3CB0B972CC6B79F0079C3E5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A3CB0B992CC6B7BC0079C3E5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A3CB0B9B2CC6B7DA0079C3E5 /* TripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewModel.swift; sourceTree = "<group>"; };
+		A3CB0B9D2CC6B7ED0079C3E5 /* TripsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsDetailViewModel.swift; sourceTree = "<group>"; };
+		A3CB0B9F2CC6B8080079C3E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A3CB0BA12CC6B8290079C3E5 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		A3CB0BA32CC6B8420079C3E5 /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		A3E073CB2CC69557001C6A19 /* PlanMyTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanMyTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E073CE2CC69557001C6A19 /* PlanMyTripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMyTripApp.swift; sourceTree = "<group>"; };
+		A3E073D02CC69557001C6A19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3E073D22CC69559001C6A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3E073D52CC69559001C6A19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3E073DB2CC69559001C6A19 /* PlanMyTripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanMyTripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E073DF2CC69559001C6A19 /* PlanMyTripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMyTripTests.swift; sourceTree = "<group>"; };
+		A3E073E52CC69559001C6A19 /* PlanMyTripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanMyTripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E073E92CC69559001C6A19 /* PlanMyTripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMyTripUITests.swift; sourceTree = "<group>"; };
+		A3E073EB2CC69559001C6A19 /* PlanMyTripUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMyTripUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3E073C82CC69557001C6A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E073D82CC69559001C6A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E073E22CC69559001C6A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3CB0B932CC6B74E0079C3E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB0B992CC6B7BC0079C3E5 /* HomeViewModel.swift */,
+				A3CB0B9B2CC6B7DA0079C3E5 /* TripsViewModel.swift */,
+				A3CB0B9D2CC6B7ED0079C3E5 /* TripsDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A3CB0B942CC6B7580079C3E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB0B9F2CC6B8080079C3E5 /* HomeView.swift */,
+				A3CB0BA12CC6B8290079C3E5 /* TripsView.swift */,
+				A3CB0BA32CC6B8420079C3E5 /* TripDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3CB0B962CC6B76E0079C3E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB0B972CC6B79F0079C3E5 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3E073C22CC69557001C6A19 = {
+			isa = PBXGroup;
+			children = (
+				A3CB0B962CC6B76E0079C3E5 /* Model */,
+				A3CB0B942CC6B7580079C3E5 /* View */,
+				A3CB0B932CC6B74E0079C3E5 /* ViewModel */,
+				A3E073CD2CC69557001C6A19 /* PlanMyTrip */,
+				A3E073DE2CC69559001C6A19 /* PlanMyTripTests */,
+				A3E073E82CC69559001C6A19 /* PlanMyTripUITests */,
+				A3E073CC2CC69557001C6A19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3E073CC2CC69557001C6A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3E073CB2CC69557001C6A19 /* PlanMyTrip.app */,
+				A3E073DB2CC69559001C6A19 /* PlanMyTripTests.xctest */,
+				A3E073E52CC69559001C6A19 /* PlanMyTripUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3E073CD2CC69557001C6A19 /* PlanMyTrip */ = {
+			isa = PBXGroup;
+			children = (
+				A3E073CE2CC69557001C6A19 /* PlanMyTripApp.swift */,
+				A3E073D02CC69557001C6A19 /* ContentView.swift */,
+				A3E073D22CC69559001C6A19 /* Assets.xcassets */,
+				A3E073D42CC69559001C6A19 /* Preview Content */,
+			);
+			path = PlanMyTrip;
+			sourceTree = "<group>";
+		};
+		A3E073D42CC69559001C6A19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A3E073D52CC69559001C6A19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3E073DE2CC69559001C6A19 /* PlanMyTripTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3E073DF2CC69559001C6A19 /* PlanMyTripTests.swift */,
+			);
+			path = PlanMyTripTests;
+			sourceTree = "<group>";
+		};
+		A3E073E82CC69559001C6A19 /* PlanMyTripUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3E073E92CC69559001C6A19 /* PlanMyTripUITests.swift */,
+				A3E073EB2CC69559001C6A19 /* PlanMyTripUITestsLaunchTests.swift */,
+			);
+			path = PlanMyTripUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3E073CA2CC69557001C6A19 /* PlanMyTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E073EF2CC69559001C6A19 /* Build configuration list for PBXNativeTarget "PlanMyTrip" */;
+			buildPhases = (
+				A3E073C72CC69557001C6A19 /* Sources */,
+				A3E073C82CC69557001C6A19 /* Frameworks */,
+				A3E073C92CC69557001C6A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanMyTrip;
+			productName = PlanMyTrip;
+			productReference = A3E073CB2CC69557001C6A19 /* PlanMyTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3E073DA2CC69559001C6A19 /* PlanMyTripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E073F22CC69559001C6A19 /* Build configuration list for PBXNativeTarget "PlanMyTripTests" */;
+			buildPhases = (
+				A3E073D72CC69559001C6A19 /* Sources */,
+				A3E073D82CC69559001C6A19 /* Frameworks */,
+				A3E073D92CC69559001C6A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3E073DD2CC69559001C6A19 /* PBXTargetDependency */,
+			);
+			name = PlanMyTripTests;
+			productName = PlanMyTripTests;
+			productReference = A3E073DB2CC69559001C6A19 /* PlanMyTripTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3E073E42CC69559001C6A19 /* PlanMyTripUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E073F52CC69559001C6A19 /* Build configuration list for PBXNativeTarget "PlanMyTripUITests" */;
+			buildPhases = (
+				A3E073E12CC69559001C6A19 /* Sources */,
+				A3E073E22CC69559001C6A19 /* Frameworks */,
+				A3E073E32CC69559001C6A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3E073E72CC69559001C6A19 /* PBXTargetDependency */,
+			);
+			name = PlanMyTripUITests;
+			productName = PlanMyTripUITests;
+			productReference = A3E073E52CC69559001C6A19 /* PlanMyTripUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3E073C32CC69557001C6A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A3E073CA2CC69557001C6A19 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A3E073DA2CC69559001C6A19 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A3E073CA2CC69557001C6A19;
+					};
+					A3E073E42CC69559001C6A19 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A3E073CA2CC69557001C6A19;
+					};
+				};
+			};
+			buildConfigurationList = A3E073C62CC69557001C6A19 /* Build configuration list for PBXProject "PlanMyTrip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3E073C22CC69557001C6A19;
+			productRefGroup = A3E073CC2CC69557001C6A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3E073CA2CC69557001C6A19 /* PlanMyTrip */,
+				A3E073DA2CC69559001C6A19 /* PlanMyTripTests */,
+				A3E073E42CC69559001C6A19 /* PlanMyTripUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3E073C92CC69557001C6A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E073D62CC69559001C6A19 /* Preview Assets.xcassets in Resources */,
+				A3E073D32CC69559001C6A19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E073D92CC69559001C6A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E073E32CC69559001C6A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3E073C72CC69557001C6A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CB0B9C2CC6B7DA0079C3E5 /* TripsViewModel.swift in Sources */,
+				A3CB0BA02CC6B8080079C3E5 /* HomeView.swift in Sources */,
+				A3CB0BA42CC6B8420079C3E5 /* TripDetailView.swift in Sources */,
+				A3CB0B982CC6B79F0079C3E5 /* Models.swift in Sources */,
+				A3CB0B9E2CC6B7ED0079C3E5 /* TripsDetailViewModel.swift in Sources */,
+				A3E073D12CC69557001C6A19 /* ContentView.swift in Sources */,
+				A3E073CF2CC69557001C6A19 /* PlanMyTripApp.swift in Sources */,
+				A3CB0B9A2CC6B7BC0079C3E5 /* HomeViewModel.swift in Sources */,
+				A3CB0BA22CC6B8290079C3E5 /* TripsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E073D72CC69559001C6A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E073E02CC69559001C6A19 /* PlanMyTripTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E073E12CC69559001C6A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E073EC2CC69559001C6A19 /* PlanMyTripUITestsLaunchTests.swift in Sources */,
+				A3E073EA2CC69559001C6A19 /* PlanMyTripUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3E073DD2CC69559001C6A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3E073CA2CC69557001C6A19 /* PlanMyTrip */;
+			targetProxy = A3E073DC2CC69559001C6A19 /* PBXContainerItemProxy */;
+		};
+		A3E073E72CC69559001C6A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3E073CA2CC69557001C6A19 /* PlanMyTrip */;
+			targetProxy = A3E073E62CC69559001C6A19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A3E073ED2CC69559001C6A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3E073EE2CC69559001C6A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3E073F02CC69559001C6A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanMyTrip/Preview Content\"";
+				DEVELOPMENT_TEAM = PH6SPWH67P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milanashakhbieva.PlanMyTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3E073F12CC69559001C6A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanMyTrip/Preview Content\"";
+				DEVELOPMENT_TEAM = PH6SPWH67P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milanashakhbieva.PlanMyTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3E073F32CC69559001C6A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PH6SPWH67P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milanashakhbieva.PlanMyTripTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanMyTrip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlanMyTrip";
+			};
+			name = Debug;
+		};
+		A3E073F42CC69559001C6A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PH6SPWH67P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milanashakhbieva.PlanMyTripTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanMyTrip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlanMyTrip";
+			};
+			name = Release;
+		};
+		A3E073F62CC69559001C6A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PH6SPWH67P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milanashakhbieva.PlanMyTripUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanMyTrip;
+			};
+			name = Debug;
+		};
+		A3E073F72CC69559001C6A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PH6SPWH67P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milanashakhbieva.PlanMyTripUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanMyTrip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3E073C62CC69557001C6A19 /* Build configuration list for PBXProject "PlanMyTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E073ED2CC69559001C6A19 /* Debug */,
+				A3E073EE2CC69559001C6A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E073EF2CC69559001C6A19 /* Build configuration list for PBXNativeTarget "PlanMyTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E073F02CC69559001C6A19 /* Debug */,
+				A3E073F12CC69559001C6A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E073F22CC69559001C6A19 /* Build configuration list for PBXNativeTarget "PlanMyTripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E073F32CC69559001C6A19 /* Debug */,
+				A3E073F42CC69559001C6A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E073F52CC69559001C6A19 /* Build configuration list for PBXNativeTarget "PlanMyTripUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E073F62CC69559001C6A19 /* Debug */,
+				A3E073F72CC69559001C6A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3E073C32CC69557001C6A19 /* Project object */;
+}
