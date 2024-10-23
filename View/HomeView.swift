@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     @State private var searchText = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(alignment: .leading) {
                 Text("PlanMyTrip")
                     .font(.largeTitle)
@@ -22,7 +23,7 @@ struct HomeView: View {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.gray)
                     
-                    TextField("Куда поедем?", text: $searchText)
+                    TextField("Куда поедем?", text: $viewModel.searchText)
                         .textFieldStyle(PlainTextFieldStyle())
                 }
                 .frame(maxWidth: .infinity)
@@ -43,18 +44,23 @@ struct HomeView: View {
                     LazyVStack(alignment: .leading, spacing: 16) {
                         ForEach(viewModel.destinations) { destination in
                             HStack(alignment: .center) {
-                                AsyncImage(url: destination.imageUrl) { image in
-                                    image
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .frame(width: 60, height: 60)
-                                        .cornerRadius(8)
-                                } placeholder: {
-                                    ProgressView()
-                                        .frame(width: 60, height: 60)
-                                        .background(Color.gray.opacity(0.15))
-                                        .cornerRadius(8)
-                                }
+                                KFImage.url(destination.imageUrl)
+                                    .setProcessor(DownsamplingImageProcessor(size: CGSize(width: 60, height: 60)))
+                                    .cacheMemoryOnly()
+                                    .fade(duration: 0.25)
+                                    .onFailure { error in
+                                        print("Failed to load image: \(error.localizedDescription)")
+                                    }
+                                    .placeholder {
+                                        ProgressView()
+                                            .frame(width: 60, height: 60)
+                                            .background(Color.gray.opacity(0.15))
+                                            .cornerRadius(8)
+                                    }
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 60, height: 60)
+                                    .cornerRadius(8)
                                 
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text(destination.name)
@@ -72,6 +78,9 @@ struct HomeView: View {
                 .padding(.top)
             }
             .padding()
+        }
+        .onAppear {
+            viewModel.onAppear()
         }
     }
 }

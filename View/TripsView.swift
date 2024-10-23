@@ -11,7 +11,7 @@ struct TripsView: View {
     @StateObject private var viewModel = TripsViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(alignment: .leading) {
                 HStack {
                     Spacer()

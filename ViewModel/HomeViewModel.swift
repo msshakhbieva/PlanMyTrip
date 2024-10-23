@@ -11,9 +11,9 @@ import Combine
 
 class HomeViewModel: ObservableObject {
     @Published var destinations: [Destination] = []
-    private var cancellables = Set<AnyCancellable>()
+    @Published var searchText = ""
     
-    init() {
+    func onAppear() {
         fetchDestinations()
     }
     
